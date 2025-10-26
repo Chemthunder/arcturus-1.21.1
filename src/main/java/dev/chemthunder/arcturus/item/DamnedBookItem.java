@@ -5,9 +5,12 @@ import dev.chemthunder.arcturus.index.ArcturusEntities;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemUsageContext;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
@@ -28,7 +31,7 @@ public class DamnedBookItem extends Item {
                 missile.setOwner(user);
             }
             if (!user.isInCreativeMode()) {
-                user.getItemCooldownManager().set(this.asItem(), 15);
+                user.getItemCooldownManager().set(this.asItem(), 7);
             }
         return super.use(world, user, hand);
     }

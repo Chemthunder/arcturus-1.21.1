@@ -63,8 +63,6 @@ public interface ArcturusItems {
 
     /*
     / todo
-    / add custom item group
     / simplify existing items
-    / revamp shackles
      */
 }

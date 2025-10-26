@@ -16,7 +16,7 @@ public interface ArcturusEntities {
 
     EntityType<MissileEntity> MISSILE_ENTITY = create(
             "magic_missile",
-            EntityType.Builder.<MissileEntity>create(
+            EntityType.Builder.create(
                     MissileEntity::new,
                     SpawnGroup.MISC
             ).dimensions(0.2f, 0.2f)

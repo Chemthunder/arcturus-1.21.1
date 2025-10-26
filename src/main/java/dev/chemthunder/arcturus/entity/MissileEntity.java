@@ -22,12 +22,6 @@ public class MissileEntity extends ThrownItemEntity {
     @Override
     public void tick() {
         getWorld().addParticle(ParticleTypes.END_ROD, true, this.getX(), this.getY() + 0.1f, this.getZ(), 0, 0, 0);
-        if (lifeSpan != 100) {
-            lifeSpan++;
-        } else if (lifeSpan == 100) {
-            lifeSpan = 0;
-            this.discard();
-        }
         super.tick();
     }
 
@@ -62,5 +56,7 @@ public class MissileEntity extends ThrownItemEntity {
         return true;
     }
 
-
+    public void setLifeSpan(int lifeSpan) {
+        this.lifeSpan = 100;
+    }
 }

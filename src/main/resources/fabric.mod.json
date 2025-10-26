@@ -22,7 +22,7 @@
       "dev.chemthunder.arcturus.ArcturusDataGenerator"
     ],
     "client": [
-      "dev.chemthunder.arcturus.client.ArcturursClient"
+      "dev.chemthunder.arcturus.client.ArcturusClient"
     ]
   },
   "mixins": [

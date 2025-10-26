@@ -16,7 +16,7 @@ public interface ArcturusItemGroups {
     RegistryKey<ItemGroup> GROUP_KEY = RegistryKey.of(RegistryKeys.ITEM_GROUP, Arcturus.id("arcturus"));
     ItemGroup ITEM_GROUP = FabricItemGroup.builder()
             .icon(() -> new ItemStack(ArcturusItems.DECADENCE))
-            .displayName(Text.translatable("itemGroup.arcturus").styled(style -> style.withColor(0xbd00d8)))
+            .displayName(Text.translatable("itemGroup.arcturus").styled(style -> style.withColor(0xffd978)))
             .build();
 
     static void init() {
